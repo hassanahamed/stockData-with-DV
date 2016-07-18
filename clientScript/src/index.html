@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html ng-app="StockGraph">
+   <head>
+      <meta charset="utf-8" />
+      <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+      <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+      <script type="text/javascript" src="js/angular/angular.js"></script>
+      <script type="text/javascript" src="js/d3/d3.min.js"></script>
+      <script type="text/javascript" src="js/n3-charts/build/LineChart.js"></script>
+      <link rel="stylesheet" href="node_modules/n3-charts/build/LineChart.css">
+      <script type="text/javascript" src="js/angular/angular-route.js"></script>
+      <script type="text/javascript" src="js/app.js"></script>
+      <script type="text/javascript" src="js/services/NetworkService.js"></script>
+      <script type="text/javascript" src="js/controllers/MainController.js"></script>
+      <script type="text/javascript" src="js/controllers/basicDisplayController.js"></script>
+      <script type="text/javascript" src="js/routes.js"></script>
+   </head>
+   <body ng-controller="MainController as main">
+      <div class="content-wrapper" ng-view></div>
+   </body>
+</html>

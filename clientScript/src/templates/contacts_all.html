@@ -1,0 +1,63 @@
+<style>
+   .chart-container, .chart {
+   height:450px;
+   }
+</style>
+<br>
+<br>
+<center>
+   <div class="my-chart">
+      <linechart data="data" options="options"></linechart>
+   </div>
+</center>
+<br>
+<hr>
+<div>
+   <center>
+      Year:
+      <select ng-model="contacts.year">
+         <option value="2016">2016</option>
+         <option value="2015">2015</option>
+         <option value="2014">2014</option>
+         <option value="2013">2013</option>
+         <option value="2012">2012</option>
+         <option value="2011">2011</option>
+         <option value="2010">2010</option>
+         <option value="2009">2009</option>
+         <option value="2008">2008</option>
+         <option value="2007">2007</option>
+         <option value="2006">2006</option>
+         <option value="2005">2005</option>
+         <option value="2004">2004</option>
+         <option value="2003">2003</option>
+         <option value="2002">2002</option>
+         <option value="2001">2001</option>
+         <option value="2000">2000</option>
+      </select>
+      Month:
+      <select ng-model = "contacts.month">
+         <option value="01">1</option>
+         <option value="02">2</option>
+         <option value="03">3</option>
+         <option value="04">4</option>
+         <option value="05">5</option>
+         <option value="06">6</option>
+         <option value="07">7</option>
+         <option value="08">8</option>
+         <option value="09">9</option>
+         <option value="10">10</option>
+         <option value="11">11</option>
+         <option value="12">12</option>
+      </select>
+      Stock Attribute:
+      <select ng-model = "contacts.yAxis">
+         <option value="open">open</option>
+         <option value="high">high</option>
+         <option value="low">low</option>
+         <option value="volume">volume</option>
+         <option value="adjClose">adjClose</option>
+      </select>
+      <br></br>
+      <button class="btn btn-primary" ng-click="contacts.getStocks(contacts.year, contacts.month, contacts.yAxis)">SUBMIT</button><br />
+   </center>
+</div>
